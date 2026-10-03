@@ -42,6 +42,9 @@
     "scheme": "pricewatch",
     "extra": {
       "router": {}
+    },
+    "ios": {
+      "bundleIdentifier": "br.com.gustavohdev.pricewatch"
     }
   }
 }
