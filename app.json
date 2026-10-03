@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "PriceWatch",
+    "slug": "pricewatch",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "br.com.gustavohdev.pricewatch",
+      "versionCode": 1,
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-share-intent",
+        {
+          "androidIntentFilters": [
+            "text/*"
+          ]
+        }
+      ],
+      "expo-web-browser",
+      [
+        "expo-notifications",
+        {
+          "color": "#3483FA"
+        }
+      ]
+    ],
+    "scheme": "pricewatch",
+    "extra": {
+      "router": {}
+    }
+  }
+}
